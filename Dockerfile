@@ -4,9 +4,7 @@ COPY docker-entrypoint.sh /entrypoint.sh
 COPY remoteip.conf /etc/apache2/conf-available/remoteip.conf
 
 RUN a2enmod remoteip \
- && a2enconf remoteip \
- && a2enmod ssl \
- && a2ensite default-ssl
+ && a2enconf remoteip
 
 EXPOSE 443
 
