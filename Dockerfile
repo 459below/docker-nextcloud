@@ -1,4 +1,4 @@
-FROM nextcloud:12.0.4-apache
+FROM nextcloud:12.0.5-apache
 
 COPY docker-entrypoint.sh /entrypoint.sh
 COPY remoteip.conf /etc/apache2/conf-available/remoteip.conf
